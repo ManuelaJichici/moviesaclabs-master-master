@@ -102,6 +102,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Angular.html" />
     <Content Include="Global.asax" />
     <Content Include="Images\dogs\dog1.jpg" />
     <Content Include="Images\dogs\dog2.jpg" />
@@ -110,6 +111,7 @@
     <Content Include="Images\dogs\dog5.jpg" />
     <Content Include="Index.html" />
     <Content Include="IndexMovies.html" />
+    <Content Include="Scripts\AngularScript.js" />
     <Content Include="Scripts\jquery-1.12.3.js" />
     <Content Include="Scripts\Main.js" />
     <Content Include="Scripts\Movies.js" />
