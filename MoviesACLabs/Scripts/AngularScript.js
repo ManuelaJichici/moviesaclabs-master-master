@@ -18,7 +18,7 @@ app.controller('MainControler', function($scope){
     $scope.countActive = items.length;
   //  $scope.count = function () {
 
-    }
+    //}
 
     
 });

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html ng-app="angmovies">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+
+    <div ng-controller="ActorsController" class="container">
+
+       <div>
+
+           <div class="Form">
+               <label for="ActorName">Name</label>
+               <input type="text" placeholder="Name" id="ActorName" ng-model="newActor.Name" /><br />
+
+               <label for="ActorDateOfBirth">DateOfBirth</label>
+               <input type="text" placeholder="DateOfBirth" id="DateaOfBirt" ng-model="newActor.DateOfBirth" /><br />
+
+               <label for="ActorRevenue">Revenue</label>
+               <input type="text" placeholder="Revenue" id="ActorRevenue" ng-model="newActor.Revenue" /><br />
+               <button ng-click="addActor()"> Add </button><br /><br />
+           </div>
+
+           <div class="delete">
+               <label for="DeleteActor"> Delete Actor</label>
+               <input type="text" placeholder="Name" id="DeleteActor" ng-model="deleteActor.Name" /><br />
+               <button ng-click="DeleteActor()"> Delete</button>
+
+           </div>
+
+           <div class="header"> Actors: </div> <br />
+           <div class="ActorsTable">
+           <table>
+             <tr>
+               <td>ID</td>
+               <td>Name</td>
+               <td>DateOfBirth</td>
+               <td>Revenue</td>
+              </tr>
+            <tr ng-repeat="actor in actors" class="Actor">
+                <td>{{actor.ID}}</td>
+                <td>{{actor.Name}}</td>
+                <td>{{actor.DateOfBirth}}</td>
+                <td>{{actor.Revenue}}</td>
+            </tr>
+           </table>
+           <!--<div ng-repeat="actor in actors" class="Actor">
+               {{actor.Name}};
+           </div>-->
+       </div>
+           </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="scripts/angularmovies.js"> </script>
+    <link href="Styles/angularmoviesstyle.css" rel="stylesheet" />
+
+</body>
+</html>
